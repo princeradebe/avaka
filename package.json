@@ -1,0 +1,17 @@
+{
+  "name": "avaka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "postcss src/styles.css -o public/output.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.2",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
+  }
+}
