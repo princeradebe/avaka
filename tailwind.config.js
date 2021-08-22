@@ -8,8 +8,8 @@ module.exports = {
         montserrat: ["Montserrat"],
       },
       backgroundImage: (theme) => ({
-        "hero-pattern": "url('/public/assets/bg.jpg')",
-        "service-assurance": "url('/public/assets/assurance.png')",
+        "hero-pattern": "url('./public/assets/bg.jpg')",
+        "service-assurance": "url('./public/assets/assurance.png')",
       }),
     },
   },

@@ -712,10 +712,10 @@ video {
 	background-color: rgba(60, 188, 195, var(--tw-bg-opacity));
 }
 .bg-hero-pattern {
-	background-image: url('/public/assets/bg.jpg');
+	background-image: url('./public/assets/bg.jpg');
 }
 .bg-service-assurance {
-	background-image: url('/public/assets/assurance.png');
+	background-image: url('./public/assets/assurance.png');
 }
 .bg-cover {
 	background-size: cover;
