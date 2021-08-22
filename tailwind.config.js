@@ -9,6 +9,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "hero-pattern": "url('/public/assets/bg.jpg')",
+        "service-assurance": "url('/public/assets/assurance.png')",
       }),
     },
   },
