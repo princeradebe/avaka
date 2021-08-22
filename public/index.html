@@ -4,10 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body>
-    <h1>HELLO</h1>
+  <body class="font-montserrat">
+    <!-- Header -->
+    <header class="bg-hero-pattern bg-cover mix-blend-normal">
+        <!-- <img src="./assets/bg.jpg" alt="" /> -->
+        <nav class="flex justify-between items-center container mx-auto py-6">
+          <img src="./assets/logo.svg" alt="logo" class="w-36" />
+          <div>
+            <ul class="flex justify-between gap-24 font-bold">
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href="">CONTACT US</a></li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+        <h1 class="container mx-auto text-6xl lg:text-8xl xl:text-9xl my-52 font-bold">Think Beyond <br> Audit<span class="text-red-500">.</span></h1>
+        <div class="grid lg:grid-cols-3 gap-6 container mx-auto">
+          <div class="flex flex-col justify-around h-[460px] bg-[#CB5050] mix-blend-multiply p-10 shadow-lg rounded-sm">
+              <div class="flex items-center">
+                  <div class="rect mr-12 ml-6"></div>
+                  <h2 class="text-4xl font-bold text-white">LEVEL 1 <br>B-BBEE</h2>
+              </div>
+              <p class="text-white mt-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis cras rutrum faucibus nisl. Nisl sed justo, donec tincidunt fringilla sit sit magna. Blandit malesuada tincidunt sollicitudin nulla cursus. Metus vestibulum at venenatis,</p>
+              <div class="flex flex-row-reverse text-white font-bold mt-12">
+                 <a href=""> FIND OUT MORE ></a>
+              </div>
+          </div>
+          <div class="flex flex-col justify-around h-[460px] bg-[#FCD583] mix-blend-multiply  p-10 shadow-lg rounded-sm">
+              <div class="flex items-center">
+                  <div class="rect mr-12 ml-6"></div>
+                  <h2 class="text-4xl font-bold text-white">OVER 7 <br>YEARS EXPERIENCE</h2>
+              </div>
+              <p class="text-white mt-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis cras rutrum faucibus nisl. Nisl sed justo, donec tincidunt fringilla sit sit magna. Blandit malesuada tincidunt sollicitudin nulla cursus. Metus vestibulum at venenatis,</p>
+              <div class="flex flex-row-reverse text-white font-bold mt-12">
+                 <a href=""> FIND OUT MORE ></a>
+              </div>
+          </div>
+          <div class="flex flex-col justify-around h-[460px] bg-[#3CBCC3] mix-blend-multiply  p-10 shadow-lg rounded-sm">
+              <div class="flex items-center">
+                  <div class="rect mr-12 ml-6"></div>
+                  <h2 class="text-4xl font-bold text-white">CLIENT <br>FOCUSED</h2>
+              </div>
+              <p class="text-white mt-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis cras rutrum faucibus nisl. Nisl sed justo, donec tincidunt fringilla sit sit magna. Blandit malesuada tincidunt sollicitudin nulla cursus. Metus vestibulum at venenatis,</p>
+              <div class="flex flex-row-reverse text-white font-bold mt-12">
+                 <a href=""> FIND OUT MORE ></a>
+              </div>
+          </div>
+        </div>
+      </header>
+      <section title="Services" class="container mx-auto">
+          <div>OUR SERVICES</div>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="flex flex-col-reverse  h-[460px] shadow-lg rounded-sm bg-hero-pattern bg-cover " >
+                <!-- <img src="./assets/bg.jpg" alt=""> -->
+                <div class=" ">
+                <a href=""> Audit & Assurance ></a>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse h-[460px] shadow-lg rounded-sm bg-hero-pattern bg-cover">
+                <!-- <img src="./assets/bg.jpg" alt=""> -->
+                <div class=" text-white text-2xl font-bold bg-black p-7">
+                <a href=""> Business Advisory ></a>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse  h-[460px] shadow-lg rounded-sm bg-hero-pattern bg-cover">
+                <!-- <img src="./assets/bg.jpg" alt=""> -->
+                <div class=" text-white text-2xl font-bold bg-black p-7">
+                <a href=""> Internal Audit ></a>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse h-[460px] shadow-lg rounded-sm bg-hero-pattern bg-cover">
+                <!-- <img src="./assets/bg.jpg" alt=""> -->
+                <div class=" text-white text-2xl font-bold bg-black p-7">
+                <a href=""> Information Technology Audit ></a>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse  h-[460px] shadow-lg rounded-sm bg-hero-pattern bg-cover">
+                <!-- <img src="./assets/bg.jpg" alt=""> -->
+                <div class=" text-white text-2xl font-bold bg-black p-7">
+                <a href=""> Consulting ></a>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse  h-[460px] shadow-lg rounded-sm bg-hero-pattern bg-cover">
+                <!-- <img src="./assets/bg.jpg" alt=""> -->
+                <div class=" text-white text-2xl font-bold bg-black p-7">
+                <a href=""> Training ></a>
+                </div>
+            </div>
+    
+        </div>
+        <button class="w-[193px] h-[65px] bg-[#CB5050] hover:bg-[#c84040] text-white mt-6">View All</button>
+      </section>
   </body>
 </html>

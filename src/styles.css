@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card__link {
+    @apply text-white hover:text-black text-2xl font-bold bg-black hover:bg-[#FCD583] p-7;
+}
+
+header {
+    height: 150vh;
+}
+
+.rect {
+    width: 60px;
+    height: 113px;
+    transform: skew(-20deg);
+    background: white;
+}
