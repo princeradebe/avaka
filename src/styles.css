@@ -23,3 +23,9 @@ header {
     transform: skew(-20deg);
     background: #CB5050;
 }
+.rect__hero {
+    width: 200px;
+    height: 400px;
+    transform: skew(-20deg);
+    background: #CB5050;
+}
