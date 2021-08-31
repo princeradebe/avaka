@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card__link {
-    @apply text-white hover:text-black text-2xl font-bold bg-black hover:bg-[#FCD583] p-7;
+    @apply text-white hover:text-black text-lg lg:text-2xl font-bold bg-black hover:bg-[#FCD583] p-7;
 }
 /* 
 header {
