@@ -45,7 +45,7 @@
         <nav class="flex justify-between items-center container mx-auto py-6">
             <a href="../index.html"><img src="../assets/logo.svg" alt="logo" class="w-36" /></a>
             <div>
-              <ul class="flex justify-between gap-24 font-bold">
+              <ul class="hidden lg:flex justify-between gap-24 font-bold">
                   
                 <li class="hover:scale-105 transition duration-700 ease-in-out hover:text-[#CB5050]" ><a href="../index.html">HOME</a></li>
                 <li class="hover:scale-105 transition duration-700 ease-in-out hover:text-[#CB5050]"><a href="">ABOUT</a></li>
@@ -54,7 +54,31 @@
               </ul>
             </div>
             </div>
-          </nav>
+            <div class="md:hidden flex items-center mr-4">
+              <button class="outline-none mobile-menu__button">
+                  <svg
+                      class="w-8 h-8 text-[#CB5050]"
+                      x-show="!showMenu"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                  >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+              </button>
+            </div>
+        </nav>
+        <div class="hidden mobile-menu bg-white">
+          <ul class="">
+              <li><a href="../index.html" class="block text-sm px-2 py-4 hover:bg-[#CB5050] transition duration-300">HOME</a></li>
+              <li><a href="#" class="block text-sm px-2 py-4 hover:bg-[#CB5050] transition duration-300">ABOUT</a></li>
+              <li class="active"><a href="../services.html" class="block text-sm px-2 py-4 text-white bg-[#CB5050] font-semibold">SERVICES</a></li>
+              <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-[#CB5050] transition duration-300">CONTACT US</a></li>
+          </ul>
+      </div>
         <!-- END MENU  -->
 
         <!-- HERO TEXT  -->
@@ -66,15 +90,18 @@
       <!-- END HEADER -->
 
       <!-- SERVICES  -->
-      <section title="Services" class="container mx-auto mb-16">
-        <div class="flex items-center mt-6  "><div class="rect__nav mr-1"></div><a class="font-bold hover:text-[#CB5050] mr-1" href="../services.html">SERVICES /</a><div>ICT AUDIT</div></div>
+      <section title="Services" >
+        <div class="container mx-auto">
+        <div class="flex items-center mt-6"><div class="rect__nav mr-1"></div><a class="font-bold hover:text-[#CB5050] mr-1" href="../services.html">SERVICES /</a><div>ICT AUDIT</div></div>
+        <div>
             <p class="text-lg py-6">
                 In today's age, ICT is at the center of every organization. Despite the organization's size, a properly placed ICT infrastructure ensures that your business keeps running smoothly. Without a proper ICT infrastructure, your business can suffer greatly.
             </p>
             <p class="text-lg">
                 At AVAKA, our professionals can perform in-depth ICT audit to ensure that your systems and the whole ICT infrastructure are optimized. We offer a range of services, such as dealing with new cyber threats, deployment of new technologies, and even guidance on getting the best out of your ICT solutions
             </p>
-
+        </div>
+        </div>
       </section>
         <!-- END SERVICES  -->
 
@@ -132,4 +159,14 @@
         </div>
       </footer>
   </body>
+  <script>
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu__button");
+    const menu = document.querySelector(".mobile-menu");
+  
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    });
+  </script>
 </html>
